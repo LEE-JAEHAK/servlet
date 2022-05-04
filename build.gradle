@@ -22,10 +22,15 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.projectlombok:lombok:1.18.20'
-    compileOnly 'org.projectlombok:lombok:1.18.22'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	compileOnly 'org.projectlombok:lombok:1.18.22'
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat:2.5.6'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.6'
+
+	implementation('org.springframework.boot:spring-boot-starter-data-jpa') // JPA사용을 위한 의존성
+	implementation('com.h2database:h2') // h2 DB 사용을 위한 의존성
 
 	//JSP 추가 시작
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
