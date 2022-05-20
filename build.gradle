@@ -37,6 +37,8 @@ dependencies {
 	//implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	//implementation 'javax.servlet:jstl'
 	//JSP 추가 끝
+
+	implementation 'org.springframework.boot:spring-boot-starter-mustache' //머스타치
 }
 
 test {
